@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{array, booktabs, multicol, multirow} % Load necessary packages
+\renewcommand{\arraystretch}{1.2} % Adjust vertical spacing in tables
+
+\begin{document}
+	\centering
+	\textbf{\Large{Student Details and Marks}} % Title
+	\vspace{0.1in}
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|} % Define table with 6 columns, all centered
+			\hline
+			\multirow{2}{*}{\textbf{S.No}} & \multirow{2}{*}{\textbf{USN}} & \multirow{2}{*}{\textbf{Student Name}} & \multicolumn{3}{c|}{\textbf{Marks}} \\ % Multirow for headers spanning 2 rows, Multicolumn for header "Marks" spanning 3 columns
+			\cline{4-6} % Horizontal line from column 4 to 6
+			& & & \textbf{Subject1} & \textbf{Subject2} & \textbf{Subject3} \\ % Sub-headers for marks
+			\hline
+			\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{4XX22XX01} & \multicolumn{1}{c|}{Name 1} & 89 & 60 & 90 \\ % Data rows
+			\hline
+			\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{4XX22XX02} & \multicolumn{1}{c|}{Name 2} & 78 & 45 & 98 \\
+			\hline
+			\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{4XX22XX03} & \multicolumn{1}{c|}{Name 3} & 67 & 55 & 59 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+\end{document}
